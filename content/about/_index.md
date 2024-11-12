@@ -8,7 +8,7 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: What is Todo4NFDI?
+      title: What is DMP4NFDI?
       subtitle: The most needed basic service yet.
       text: |
         And there's a lot more to discover.

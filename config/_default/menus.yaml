@@ -2,32 +2,59 @@
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
+# https://docs.hugoblox.com/getting-started/customize/#menu-items
 
 main:
   - name: About
+    identifier: about
     url: about
     weight: 10
-  - name: News
-    url: news
+  - name: DMP4NFDI
+    parent: about 
+    url: about/dmp4nfdi/
+    weight: 10
+  - name: RDMO
+    parent: about 
+    url: about/rdmo/
+    weight: 20    
+  - name: Our Services
+    identifier: services
+    url: services
     weight: 20
-  - name: Publications
-    url: publications
+  - name: RDMO Hosting
+    parent: services 
+    url: services/rdmo-hosting
+    weight: 10  
+  - name: Template Development
+    parent: services 
+    url: services/template-development
+    weight: 20
+  - name: Training & Outreach
+    parent: services 
+    url: services/training-outreach
     weight: 30
-#  - name: Training Material
-#    url: training-material
-#    weight: 40
-  - name: Docs
+  - name: RDMO Integration
+    parent: services 
+    url: services/rdmo-integration
+    weight: 40        
+  - name: Publications
+    url: publication
+    weight: 30
+  - name: Events
+    url: events
+    weight: 40
+  - name: Documentation
     url: docs
     weight: 50
-#  - name: PID Services/Provider
-#    url: pid-services-provider
-#    weight: 60
-  - name: Events
-    url: event
-    weight: 70
-  - name: People
-    url: people
-    weight: 80
+  - name: Incubator Projects
+    url: incubator
+    weight: 60
   - name: Contact
     url: contact
-    weight: 90
+    weight: 70
+#  - name: PID Services/Provider
+#    url: pid-services-provider
+#    weight: 70
+#  - name: People
+#    url: people
+#    weight: 90

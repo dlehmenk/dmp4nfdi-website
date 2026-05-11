@@ -9,7 +9,7 @@ on:
     branches: ["main"]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
-
+https://github.com/dlehmenk/dmp4nfdi-website/edit/main/.github/workflows/publish.yaml
 # Provide permission to clone the repo and deploy it to GitHub Pages
 permissions:
   contents: read
@@ -31,7 +31,7 @@ jobs:
           # Fetch history for Hugo's .GitInfo and .Lastmod
           fetch-depth: 0
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3.1
+        uses: peaceiris/actions-hugo@v3.2.1
         with:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
@@ -63,7 +63,7 @@ jobs:
           # Fetch history for Hugo's .GitInfo and .Lastmod
           fetch-depth: 0
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3.1
+        uses: peaceiris/actions-hugo@v3.2.1
         with:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
